@@ -1,0 +1,25 @@
+CONFIG INTRANET
+SUIVRE LES ETAPES !
+
+1. Mettre un dns dans le fichier resolv : nano /etc/resolv.conf
+
+Exemple : domain iutbeziers.fr
+	  nameserver 10.255.255.200
+	  
+2. Faire un apt update
+
+3. Installer le paquet apache2 : apt install apache2
+
+4. Configuration addressage : dhclient
+
+5. Aller dans le fichier /var/www/html/index.html
+
+6. Modifier ce fichier par le html présent dans le dossier INTRANET
+
+7. Démarrer apache avec la commande : service apache2 start
+
+8. Faire un ping et un curl de l'ip de du serveur depuis les autres machines pour vérifier quelles peuvent l'atteindre.
+
+9. Autre options lancer le firefox présent sur gns3, ouvrer un terminal et faite un dhclient dedans.
+
+10. Une fois l'ip attribué se rendre sur le navigateur web et taper l'ip 192.168.30.2 et vérifier que la page apparaît bien.

@@ -1,0 +1,29 @@
+SSH
+SUIVRE LES INSTRUCTIONS !
+
+POUR CHAQUE MACHINES :
+
+1. Rajouter un DNS dans le fichier /etc/resolv.conf 
+
+2. Faite un apt update
+
+3. Installer le packet openssh server : apt install openssh-server
+
+4. Démarrer les servers sur chaque machine avec la commande : /etc/init.d/ssh start
+
+5. Ne pas oublier de créer un utilisateur : adduser test et en passwd : test, le reste on ne mettra rien
+
+6. Se rendre dans le fichier /etc/ssh/ssh_config avec nano ou vim :
+    - Ajouter la ligne : KexAlgorithms diffie-hellman-group1-sha1,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha1
+    - Décommenter la ligne Ciphers et remplacer la chaîne de caractère par : aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc
+    
+Ces deux lignes vont vous permettre de pouvoir ssh le routeur.
+
+7. Vous pouvez désormais ssh les machines que vous souhaitez avec la commande : ssh test@IP
+
+ATTENTION !
+
+Il se peut que vous ne puissiez toujours pas ssh la machine et que ça vous demande d'ajouter une chaîne de caractère en plus pour Ciphers dans le fichier ssh_config, ajouter celle qui est écrite et vous pourrez ensuite ssh.
+
+
+ 

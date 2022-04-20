@@ -90,6 +90,7 @@ Vous faites cette commande pour tous les vlans et vous terminez par cette comman
 <br />
 
 * Le service est censé déjà être configuré sur l'ensemble des machines. Voici la commande pour ssh :
+    * démarrer le service ssh : /etc/init.d/ssh start
     * utilisateur : test
     * mot de passe : test
     * ssh test@IP
@@ -97,5 +98,44 @@ Vous faites cette commande pour tous les vlans et vous terminez par cette comman
 
 <img src="/MARKDOWN_IMG/MAJ.png"> + <img src="/MARKDOWN_IMG/2.png">
 
+<br />
+
+⚠️ Pour pouvoir ssh le routeur c'est un peu plus compliqué car il utilise un ssh ancien qui va demander de rajouter des lignes dans un fichier pour cela aller lire le fichier au chemin suivant : SAE21_FICHIERCONF ↦ SWITCH ↦ SSH-CONF-README (L'étape 6).
+Attention les lignes sont à ajouter aux fichiers ssh_config des machines en aucun cas toucher la configuration du routeur.
+
+<br />
+
+## 6️⃣ | GNS3 - Intranet
+
+<br />
+
+* Le service est censé déjà être configuré sur la machine **SERVEURINTRANET**. Pour vérifier qu'il fonctionne :
+    * Utiliser le firefox en mettant l'addresse du serveur dans l'url
+    * Faite un curl de l'addresse IP du serveur depuis une machine des vlans
+    * Si le service apache2 n'est pas lancé alors faite la commande : service apache2 start
+
+<br />
+
+⚠️ Si vous rencontrez des problèmes avec le serveur intranet suivez les instructions du fichier dans le chemin : SAE21_FICHIERCONF ↦ INTRANET ↦ INTRANET-CONF-README
+
+<br />
+
+## 7️⃣ | Vérifications
+
+<br />
+
+* Faite des pings dans les vlans et regarder si il arrive à joindre d'autres vlans ou non.
+* Vérifier que seul les SI puissent SSH toutes les machines mais pas en retour.
+* Regarder qu'on puisse accéder au serveur intranet depuis chaque vlan avec un curl ou même le firefox présent.
+* Regarder que les administratifs ont accés au serveur web externe + internet avec un ping 8.8.8.8 par exemple ou avec la résolution DNS.
+* Regarder que les commerciaux ont accés au serveur web mais pas internet.
+
+<br />
+
+⚠️ Il ce peut dans certains cas vous rencontriez des problèmes de filtrage, si c'est bien le cas aller lire le fichier dans le chemin : SAE21_FICHIERCONF ↦ ROUTEUR ↦ ACL_conf.txt pour vérifier que le routeur dispose exactement des mêmes paramètres que le fichier sinon c'est une erreur de notre part.
+
+<br />
+
+En espérant que cette fiche d'aide vous aura été utile pour résoudre vos problèmes ou bien même pour réaliser le montage. 😉
 
 

@@ -13,7 +13,7 @@
 
 * Prendre le routeur qui est au nom de Ndeye Codou Touré
 * Le brancher à l'ordinateur et à internet
-* Faire un dhclient
+* Faire un dhclient sur l'ordinateur
 
 <br />
 
@@ -109,9 +109,10 @@ Attention les lignes sont à ajouter aux fichiers ssh_config des machines en auc
 
 <br />
 
+* Ne pas oublier de faire un adressage statique
 * Le service est censé déjà être configuré sur la machine **SERVEURINTRANET**. Pour vérifier qu'il fonctionne :
-    * Utiliser le firefox en mettant l'addresse du serveur dans l'url
-    * Faite un curl de l'addresse IP du serveur depuis une machine des vlans
+    * Utiliser le firefox en mettant l'adresse du serveur dans l'url
+    * Faite un curl de l'adresse IP du serveur depuis une machine des vlans
     * Si le service apache2 n'est pas lancé alors faite la commande : service apache2 start
 
 <br />

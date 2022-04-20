@@ -50,9 +50,15 @@ Vous vous attendiez peut-être à récupérer des fichiers conf pour les deux se
 
 <br />
 
+### Sur les machines utilisées le pavé numérique pour les caractères spéciaux 
+
+<br />
+
 * Effectuer la commande dhclient sur l'ensemble des machines
+    * username : root
+    * mot de passe : debian
 * Pour le serveur on a préféré un adressage statique suivez les étapes :
-     * Ouvrez la console du serveur nommé : SERVEURINTRANET
+     * Ouvrez la console du serveur nommé : **SERVEURINTRANET**
      * Faite les commandes suivantes :
         * ip addr add 192.168.40.80/24 dev {interface}
         * ip route add default via 192.168.40.254 dev {interface}
@@ -79,4 +85,17 @@ Vous faites cette commande pour tous les vlans et vous terminez par cette comman
 
 <br />
 
-## 5️⃣ | GNS3 
+## 5️⃣ | GNS3 - SSH
+
+<br />
+
+* Le service est censé déjà être configuré sur l'ensemble des machines. Voici la commande pour ssh :
+    * utilisateur : test
+    * mot de passe : test
+    * ssh test@IP
+    * Pour faire un @ avec la machine debian faire cette combine :
+
+<img src="/MARKDOWN_IMG/MAJ.png"> + <img src="/MARKDOWN_IMG/2.png">
+
+
+

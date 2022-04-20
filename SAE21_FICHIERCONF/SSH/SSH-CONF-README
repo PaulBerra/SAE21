@@ -9,7 +9,7 @@ POUR CHAQUE MACHINES :
 
 3. Installer le packet openssh server : apt install openssh-server
 
-4. Démarrer les servers sur chaque machine avec la commande : /etc/init.d/ssh start
+4. Démarrer les serveurs sur chaque machine avec la commande : /etc/init.d/ssh start
 
 5. Ne pas oublier de créer un utilisateur : adduser test et en passwd : test, le reste on ne mettra rien
 

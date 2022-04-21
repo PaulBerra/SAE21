@@ -5,6 +5,10 @@
 ### Pour vous accompagnez durant la mise en place de notre installation veuillez suivre les étapes ci-dessous :
 ### Vous pourrez retrouver sur le github une image png de notre montage réseau qui se nomme : **Schema_SAE21.png**
 
+Là voila en miniature :
+
+<img src="Schema_SAE21.png">
+
 <br />
 
 ## 1️⃣ | Branchement Mikrotik :
@@ -17,7 +21,7 @@
 
 <br />
 
-⚠️ Si vous rencontrez des difficultés avec le routeur sur le montage par exemple une machine administrative n'arrive pas à un ping internet, joindre le web externe, si vous n'arrivez pas à trouver d'où provient le problème de la config enlever le du montage, le routeur sur gns3 dispose de NAT permettant de joindre internet et le web externe sans le mikrotik.
+⚠️ Si vous rencontrez des difficultés avec le routeur sur le montage par exemple une machine administrative n'arrive pas à un ping internet, joindre le web externe, si vous n'arrivez pas à trouver d'où provient le problème de la config enlever le du montage, le routeur sur gns3 dispose de NAT permettant de joindre internet avec le réseau de salle 213 et peut joindre le web externe + DNS sans le mikrotik.
 
 <br />
 
@@ -25,11 +29,11 @@
 
 <br />
 
-* Lancer sur l'ordinateur le script bash nommé : **apache2conf.sh**
+* Lancer sur un second ordinateur qui servira de serveur web et dns le script bash nommé : **apache2conf.sh**
 
 <br />
 
-Vous vous attendiez peut-être à récupérer des fichiers conf pour les deux services mais grâce à un technicien de notre entreprise tout ceci devient autonome.
+Vous vous attendiez peut-être à récupérer des fichiers confs pour les deux services mais grâce à un technicien de notre entreprise tout ceci devient autonome.
 
 <br />
 
@@ -42,7 +46,7 @@ Vous vous attendiez peut-être à récupérer des fichiers conf pour les deux se
 <br />
 
 * Lancer sur l'ordinateur le projet gns3 nommé : xxx
-* Vous pouvez télécharger les images nécessaires pour le montage via ce lien MEGA :
+* Vous pouvez télécharger les images nécessaires pour le montage via ce lien MEGA : (Minimum 2,5 Go d'espace libre)
 
 <br />
 
@@ -50,38 +54,29 @@ Vous vous attendiez peut-être à récupérer des fichiers conf pour les deux se
 
 <br />
 
-### Sur les machines utilisées le pavé numérique pour les caractères spéciaux 
+### **Sur les machines utilisées le pavé numérique pour les caractères spéciaux**
 
 <br />
 
 * Effectuer la commande dhclient sur l'ensemble des machines
     * username : root
     * mot de passe : debian
-* Pour le serveur on a préféré un adressage statique suivez les étapes :
-     * Ouvrez la console du serveur nommé : **SERVEURINTRANET**
-     * Faite les commandes suivantes :
-        * ip addr add 192.168.40.80/24 dev {interface}
-        * ip route add default via 192.168.40.254 dev {interface}
-* Pour le routeur et le switch les configurations y seront déjà présentes au lancement du projet GNS3
+* Les configurations ssh et serveur intranet y seront déjà présentes au lancement du projet.
+* Pour le routeur la configuration y sera de base néanmoins pour le switch on a rencontré un petit problème c'est que la création des vlans dans la vlan database ne se sauvegarde pas, pas de panique vous aurez juste à rentrer c'est quelques commandes pour le switch :
+    * SW1# vlan database
+    * SW1(vlan) vlan 10 name administratif
+    * SW1(vlan) vlan 20 name commercial
+    * SW1(vlan) vlan 30 name si
+    * SW1(vlan) vlan 40 name serveur
+    * SW1(vlan) apply
 
 <br />
 
-⚠️ Si vous avez un problème avec les confs routeur/switch par exemple avec un vlan absent ou autre ce qui peut arriver, récupérer les configurations qui vous concernent dans les chemins suivant : 
+⚠️ Si vous avez un problème avec les confs routeur/switch ce qui peut arriver, récupérer les configurations qui vous concernent dans les chemins suivant : 
 * SAE21_FICHIERCONF ↦ ROUTEUR ↦ ACL_conf.txt (pour un problème avec les ACL) 
 * SAE21_FICHIERCONF ↦ ROUTEUR ↦ R1_i1_startup-config.cfg (pour la configuration entière du routeur) 
 * SAE21_FICHIERCONF ↦ ROUTEUR ↦ R1_i1_private-config.cfg (pour la clé RSA du routeur pour le ssh) 
 * SAE21_FICHIERCONF ↦ SWITCH ↦ SW1_i2_startup-config.cfg (pour la configuration entière du switch)
-
-<br />
-
-D'après moi la startup config du switch n'exécute pas la création des vlans dans la vlan database voici donc les commandes pour les créer si vous rencontrez des problèmes avec un vlan manquant :
-
-* SW1# vlan database
-* SW1(vlan) : vlan 10 name administratif
-
-Vous faites cette commande pour tous les vlans et vous terminez par cette commande :
-
-* SW1(vlan) : apply
 
 <br />
 

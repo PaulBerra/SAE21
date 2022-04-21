@@ -54,7 +54,7 @@ Vous vous attendiez peut-être à récupérer des fichiers confs pour les deux s
 
 <br />
 
-### **Sur les machines utilisées le pavé numérique pour les caractères spéciaux**
+### **Sur les machines utiliser le pavé numérique pour les caractères spéciaux**
 
 <br />
 

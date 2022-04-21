@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="OtZCp-qMot1ulymGe9xT" name="Page-1">
-        <mxGraphModel dx="821" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="820" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -143,7 +143,7 @@
                         <mxGeometry x="530" y="472.5" width="110" height="20" as="geometry"/>
                     </mxCell>
                 </UserObject>
-                <UserObject label="192.168.40.80/24" placeholders="1" name="Variable" id="47">
+                <UserObject label="192.168.40.1/24" placeholders="1" name="Variable" id="47">
                     <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=12;fontColor=#F0F0F0;" parent="1" vertex="1">
                         <mxGeometry x="60" y="590" width="110" height="20" as="geometry"/>
                     </mxCell>
@@ -168,10 +168,7 @@
                         <mxGeometry x="1240" y="480" width="110" height="20" as="geometry"/>
                     </mxCell>
                 </UserObject>
-                <mxCell id="57" value="IP Statique" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
-                    <mxGeometry x="80" y="610" width="70" height="20" as="geometry"/>
-                </mxCell>
-                <mxCell id="58" value="123.123.14.1/24" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+                <mxCell id="58" value="123.123.14.1/24" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontColor=#FFFFFF;" parent="1" vertex="1">
                     <mxGeometry x="670" y="472.5" width="100" height="20" as="geometry"/>
                 </mxCell>
             </root>

@@ -46,7 +46,7 @@ Vous vous attendiez peut-être à récupérer des fichiers confs pour les deux s
 <br />
 
 * Lancer sur l'ordinateur le projet gns3 nommé : xxx
-* Vous pouvez télécharger les images nécessaires pour le montage via ce lien MEGA : (Minimum 2,5 Go d'espace libre)
+* Vous pouvez télécharger les images nécessaires pour le montage via ce lien MEGA : https://mega.nz/folder/EowkXBxK#reHlGpwhREQn8EMt9wR_hg (Minimum 2,5 Go d'espace libre)
 
 <br />
 

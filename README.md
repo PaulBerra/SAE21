@@ -29,15 +29,15 @@ Là voila en miniature :
 
 <br />
 
-* Lancer sur un second ordinateur qui servira de serveur web et dns le script bash nommé : **apache2conf.sh**
+* Lancer sur un second ordinateur qui servira de serveur web et dns le script bash nommé : **apache2conf.sh** (attention a bien le lancer en root !)
 
 <br />
 
-Vous vous attendiez peut-être à récupérer des fichiers confs pour les deux services mais grâce à un technicien de notre entreprise tout ceci devient autonome.
+Vous vous attendiez peut-être à récupérer des fichiers de configuration pour les deux services mais grâce à un technicien de notre entreprise tout ceci devient autonomatique.
 
 <br />
 
-⚠️ En cas de problème avec un des services ou même les deux vous pourrez retrouver les fichiers confs originals dans le dossier **DNSetApache.zip**
+⚠️ En cas de problème avec un des services ou même les deux vous pourrez retrouver les fichiers confs originals dans le dossier **DNSetApache**
 
 <br />
 

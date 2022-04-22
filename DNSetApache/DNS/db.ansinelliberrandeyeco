@@ -10,6 +10,6 @@ $TTL	604800
 			 604800 )	; Negative Cache TTL
 ;
 @	IN	NS	ns.ansinelliberrandeyeco.
-@	IN	A	10.213.10.1
-ns	IN	A	10.213.10.1
+@	IN	A	123.123.14.53
+ns	IN	A	123.123.14.53
 www	IN	CNAME	ns

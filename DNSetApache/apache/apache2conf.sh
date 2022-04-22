@@ -1,4 +1,8 @@
 #!/bin/bash
+read -p "Entrez le nom de votre carte réseau pour le flush et l'attribution d'une ip :" cr
+sudo ip a flush dev $cr
+sudo ip a a 123.123.14.53/24 dev $cr
+
 ### colors ###
 rougefonce='\e[0;31m'
 neutre='\e[0;m'
@@ -9,7 +13,7 @@ sudo apt-get --purge remove bind9 -y &> /dev/null
 sudo apt-get install bind9 -y &> /dev/null
 sudo apt-get --purge remove apache2 -y &> /dev/null
 sudo apt-get remove apache2-common -y &> /dev/null
-apt-get install apache2 -y &> /dev/null
+sudo apt-get install apache2 -y &> /dev/null
 sudo systemctl enable apache2 &> /dev/null
 }
 #### mise en place du site ####
@@ -92,8 +96,10 @@ systemctl start apache2
 }
 
 ### finish ###
-prog
-echo
+
+prog # lancement des instructions
+
+echo ''
 
 echo ''
 echo -e "${vert} Apache2 et DNS configurer avec succes"

@@ -45,7 +45,7 @@ Vous vous attendiez peut-être à récupérer des fichiers de configuration pour
 
 <br />
 
-* Lancer sur l'ordinateur le projet gns3 nommé : xxx
+* Lancer sur l'ordinateur le projet gns3 nommé : projetSAE21.gns3
 * Vous pouvez télécharger les images nécessaires pour le montage via ce lien MEGA : https://mega.nz/folder/EowkXBxK#reHlGpwhREQn8EMt9wR_hg (Minimum 2,5 Go d'espace libre)
 
 <br />

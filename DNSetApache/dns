@@ -1,0 +1,22 @@
+  GNU nano 5.4                                       db.ansinelliberrandeyeco                                                 
+;
+; BIND data file for local loopback interface
+;
+$TTL    604800
+@       IN      SOA     master.ansinelliberrandeyeco. vqdfq.gmail.com.  (
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      master.ansinelliberrandeyeco.
+@       IN      A       10.213.10.1
+www     IN      A       10.213.10.1
+
+zone "ansinelliberrandeyeco.fr" {
+        type master;
+        file "/etc/bind/db.ansinelliberrandeyeco";
+};
+
+

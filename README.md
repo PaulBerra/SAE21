@@ -31,13 +31,15 @@ Là voila en miniature :
 
 * Lancer sur un second ordinateur qui servira de serveur web et dns le script bash nommé : **apache2conf.sh** (attention a bien le lancer en root !)
 
+Chemin : DNSetApache ↦ apache ↦ apache2conf.sh
+
 <br />
 
 Vous vous attendiez peut-être à récupérer des fichiers de configuration pour les deux services mais grâce à un technicien de notre entreprise tout ceci devient autonomatique.
 
 <br />
 
-⚠️ En cas de problème avec un des services ou même les deux vous pourrez retrouver les fichiers confs originals dans le dossier **DNSetApache**
+⚠️ En cas de problème avec un des services plus particulièrement le DNS ou même les deux vous pourrez retrouver les fichiers confs originals dans le dossier **DNSetApache** et ensuite le dossier DNS en cas de problème DNS et le dossier apache en cas de problème avec le serveur web externe.
 
 <br />
 
@@ -139,7 +141,7 @@ Attention les lignes sont à ajouter aux fichiers ssh_config des machines en auc
 
 <br />
 
-### Firewall :
+### Configuration Firewall par Ndeye (cliquer sur l'image pour une meilleure qualité) :
 
 <br />
 

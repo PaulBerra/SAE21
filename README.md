@@ -132,6 +132,20 @@ Attention les lignes sont à ajouter aux fichiers ssh_config des machines en auc
 
 <br />
 
+### Voici une image de notre Montage et la configuration Firewall :
+<br />
+
+<img src="/MARKDOWN_IMG/Routeur_SAE.png">
+
+<br />
+
+### Firewall :
+
+<br />
+
+<img src="/MARKDOWN_IMG/Firewall.png">
+
+<br />
 En espérant que cette fiche d'aide vous aura été utile pour résoudre vos problèmes ou bien même pour réaliser le montage. 😉
 
 

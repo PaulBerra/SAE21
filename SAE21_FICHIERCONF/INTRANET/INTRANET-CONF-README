@@ -10,7 +10,7 @@ Exemple : domain iutbeziers.fr
 
 3. Installer le paquet apache2 : apt install apache2
 
-4. Configuration addressage : dhclient
+4. Configuration adressage : dhclient
 
 5. Aller dans le fichier /var/www/html/index.html
 

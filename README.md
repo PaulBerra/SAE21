@@ -11,7 +11,10 @@ Là voila en miniature :
 
 <br />
 
+## <b> Voici la vidéo qui montre tous les tests réalisés sur GNS3 :
 https://www.youtube.com/watch?v=GnxivQvqc3k
+
+<br />
 
 ## 1️⃣ | Branchement Mikrotik :
 

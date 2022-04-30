@@ -11,7 +11,7 @@ Là voila en miniature :
 
 <br />
 
-http://www.youtube.com/watch?v=T-D1KVIuvjA
+https://www.youtube.com/watch?v=GnxivQvqc3k
 
 ## 1️⃣ | Branchement Mikrotik :
 

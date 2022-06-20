@@ -2,6 +2,7 @@
 
 <br />
 
+### Je tiens à préciser on vient de se rendre Compte le lundi 20 juin que sur les comptes rendus de Ndeye il y a le nom prénom de Maxime Bonnet, c'est parce que Ndeye possédait un ordinateur de l'IUT mais c'est bien Ndeye qui a réalisé les comptes rendus
 ### Pour vous accompagnez durant la mise en place de notre installation veuillez suivre les étapes ci-dessous :
 ### Vous pourrez retrouver sur le github une image png de notre montage réseau qui se nomme : **Schema_SAE21.png**
 
